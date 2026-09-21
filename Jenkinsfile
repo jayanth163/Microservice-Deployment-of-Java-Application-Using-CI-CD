@@ -16,7 +16,8 @@ pipeline {
                 echo "performing scm_checkout"
 
                 git branch: 'master',
-                    url: 'https://github.com/jayanth163/BankingWebApp.git'
+                    url: 'https://github.com/jayanth163/Microservice-Deployment-of-Java-Application-Using-CI-CD.git
+'
             }
         }
 
@@ -35,8 +36,8 @@ pipeline {
                 sh 'docker build -t jayanth16316/banking_app:${BUILD_NUMBER} .'
                 sh 'docker tag jayanth16316/banking_app:${BUILD_NUMBER} jayanth16316/banking_app:latest'
             }
-        }
-
+        } 
+        
         stage('Login to Docker Hub') {
             steps {
                 sh 'echo $Dockerhub_credentials_PSW | docker login -u $Dockerhub_credentials_USR --password-stdin'
