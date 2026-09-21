@@ -7,7 +7,12 @@
 Modernized and automated the deployment of a Java microservice application by implementing an end-to-end CI/CD pipeline. The project automates application build, testing, containerization, Docker image publishing, Kubernetes deployment, and infrastructure monitoring.
 
 
-##Note: This repo contains source code, dockerfile, Manifest File, Jenkinsfile (containing pipeline script).   
+##Note: This repo contains source code, dockerfile, Manifest File, Jenkinsfile (containing pipeline script).  
+
+## 🏗️ Website_image
+
+<img width="1318" height="608" alt="image" src="https://github.com/user-attachments/assets/434ea820-b547-4971-8063-b07f8f5a6929" />
+
 
 ## 🏗️ Architecture
 
